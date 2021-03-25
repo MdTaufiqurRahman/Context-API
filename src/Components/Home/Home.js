@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { CategoryContext } from '../../App';
 
 const Home = (props) => {
-    const {count,setCount} = props;
+    const [count, setCount] = useContext(CategoryContext);
     return (
         <div>
             <h1>Home:{count}</h1>
